@@ -29,6 +29,16 @@ class Directory(Model):
     database = db
 
 
+def manageInput(mystring):
+  """This function takes a string and depending on the version of 
+  python calls either raw_input or input function."""
+  try:
+    myInput = raw_input(mystring)
+  except:
+    myInput = input(mystring)
+  return myInput      
+
+
 def add_directories(my_dir,my_batchfile_path,trigger):
   """This function takes 3 arguments, The directory to monitor,the batchfilepath, 
   and the trigger( or the number of files that need 
@@ -44,6 +54,44 @@ def add_directories(my_dir,my_batchfile_path,trigger):
     directory.fileTrigger= trigger
     directory.save()
     return "\n Directory saved"
+
+
+def list_directories():
+  print("\n *** LIST OF DIRECTORIES BEING WATCHED \n")
+  if Directory.select().count()==0:
+    print("No directories being monitored !!")
+  else:
+    for dir in Directory.select():
+      print("\n {} {} {}".format(dir.id,dir.monitorDirectory,dir.fileTrigger))
+
+
+def del_directories(my_id):
+  """This function takes an id or Primary key 
+  The directory you are trying to delete does not exist
+  as an argument and deletes that record from the database."""
+
+  print("\n")
+  try:
+    directory = Directory.get(Directory.id == my_id)
+    directory.delete_instance()
+    print("\n")
+    return "The Directory has been deleted! "
+  except Directory.DoesNotExist:
+    return "The directory you are trying to delete does not exist"  
+
+
+  
+         
+         
+
+def show_menu():
+
+  mystring ="TO ADD A DIRECTORY [A] \n"
+  mystring+="TO DELETE A DIRECTORY FROM THE QUEUE [D] \n"
+  mystring+="TO START MONITORINING DIRECTORIES [M]\n"
+  mystring+="TO LIST DIRECTORIES [L],\n"
+  mystring+="TO QUIT [Q] \n"
+  print(mystring)     
 
 
 
@@ -108,8 +156,8 @@ data processing software exports data to a directory with the correct number of 
 
 #### Reference:
 
-[https://pypi.python.org/pypi/watchdog]
-[http://docs.peewee-orm.com/en/latest/]
+1. [https://pypi.python.org/pypi/watchdog]
+2. [http://docs.peewee-orm.com/en/latest/]
 
 #### Contributors:
 1. Just me [https://github.com/squadran2003]
