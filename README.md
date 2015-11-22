@@ -2,13 +2,16 @@ PYTHON-DIRECTORY-WATCHER
 ========================
 
 
-Description:
+#### Description:
 
 Python-Directory-Watcher is a command line python app that monitors a specified directory for file created events,when the correct number of files get created in a directory
 an event is raised which runs a specified batch file.The app works well in the windows enviroments primary due to permission issues on other OS like linux or mac.
 
 
-Example:
+#### Example:
+
+```python
+
 
 from peewee import *
 from mywatchdog import *
@@ -89,24 +92,26 @@ if __name__ == '__main__':
       print(" \n SORRY DID NOT RECOGNISE YOUR INPUT >>")
       continue 
 
+```      
 
-Motivation:
+
+#### Motivation:
 
 Professionally I work as a data programmer, the idea for this app came from the need to automate some of my jobs at work. I set a directory to be monitored by the app,when the
 data processing software exports data to a directory with the correct number of files a batch file gets called running another application which creates print ready pdf's.
 
-Installation:
+#### Installation:
 
 1 ) Download the zip or clone the repo
 2 ) Install watchdog with the command pip install watchdog 
 3 ) Install peewee pip install peewee 
 
-Reference:
+#### Reference:
 
 https://pypi.python.org/pypi/watchdog
 http://docs.peewee-orm.com/en/latest/
 
-Contributors:
+#### Contributors:
 https://github.com/squadran2003
 
 
