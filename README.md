@@ -108,11 +108,11 @@ data processing software exports data to a directory with the correct number of 
 
 #### Reference:
 
-https://pypi.python.org/pypi/watchdog
-http://docs.peewee-orm.com/en/latest/
+[https://pypi.python.org/pypi/watchdog]
+[http://docs.peewee-orm.com/en/latest/]
 
 #### Contributors:
-https://github.com/squadran2003
+1. Just me [https://github.com/squadran2003]
 
 
 
