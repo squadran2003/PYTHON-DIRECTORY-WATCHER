@@ -102,9 +102,9 @@ data processing software exports data to a directory with the correct number of 
 
 #### Installation:
 
-1 ) Download the zip or clone the repo
-2 ) Install watchdog with the command pip install watchdog 
-3 ) Install peewee pip install peewee 
+1. Download the zip or clone the repo
+2. Install watchdog with the command pip install watchdog 
+3. Install peewee pip install peewee 
 
 #### Reference:
 
