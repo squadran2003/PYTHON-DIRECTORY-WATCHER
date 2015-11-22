@@ -4,8 +4,8 @@ PYTHON-DIRECTORY-WATCHER
 
 #### Description:
 
-Python-Directory-Watcher is a command line python app that monitors a specified directory for file created events,when the correct number of files get created in a directory
-an event is raised which runs a specified batch file.The app works well in the windows enviroments primary due to permission issues on other OS like linux or mac.
+Python-Directory-Watcher is a command line python app that monitors a specified directory for file created events,when the correct number of files get created in a directory an event is raised which runs a specified batch file.The app works well in the windows enviroments primary due to permission issues on other OS like linux or mac. The app uses a backend Sqlite3 database
+to store information about the directories that need to be monitored.
 
 
 #### Example:
