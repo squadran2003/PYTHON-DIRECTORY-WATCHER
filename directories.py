@@ -58,8 +58,7 @@ def list_directories():
 
 def del_directories(my_id):
   """This function takes an id or Primary key 
-  The directory you are trying to delete does not exist
-  as an argument and deletes that record from the database."""
+  and deletes that record from the database."""
 
   print("\n")
   try:
