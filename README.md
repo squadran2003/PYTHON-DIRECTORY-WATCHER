@@ -155,11 +155,11 @@ data processing software exports data to a directory with the correct number of 
 
 #### Reference:
 
-1. [https://pypi.python.org/pypi/watchdog]
-2. [http://docs.peewee-orm.com/en/latest/]
+1. [WatchDog] (https://pypi.python.org/pypi/watchdog)
+2. [Peewee] (http://docs.peewee-orm.com/en/latest/)
 
 #### Contributors:
-1. Just me [https://github.com/squadran2003]
+1. Just me [follow me on github] (https://github.com/squadran2003)
 
 
 
