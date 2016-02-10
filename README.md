@@ -149,14 +149,14 @@ data processing software exports data to a directory with the correct number of 
 
 #### Installation:
 
-[] Download the zip or clone the repo
-[] Install watchdog with the command pip install watchdog 
-[] Install peewee pip install peewee 
+1. Download the zip or clone the repo
+2. Install watchdog with the command pip install watchdog 
+3. Install peewee pip install peewee 
 
 #### Reference:
 
-[] [WatchDog] (https://pypi.python.org/pypi/watchdog)  
-[] [Peewee] (http://docs.peewee-orm.com/en/latest/)
+1. [WatchDog] (https://pypi.python.org/pypi/watchdog)  
+2. [Peewee] (http://docs.peewee-orm.com/en/latest/)
 
 
 
